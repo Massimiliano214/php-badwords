@@ -1,10 +1,14 @@
 <?php
     $paragrafo = $_GET["paragrafo"];
+
+    $censuraP = $paragrafo;
+
+    
     $censura = $_GET["censura"];
 
     $langP = strlen($paragrafo);
 
-    $censuraP = $paragrafo;
+    
 
     echo '<pre>';
     var_dump($paragrafo);
@@ -22,9 +26,7 @@
 
     str_replace($censura, '***', $censuraP);
 
-    echo '<pre>';
-    var_dump($censuraP);
-    echo '</pre>';
+
     
 
     $langBadP = strlen($censuraP);
