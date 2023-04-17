@@ -3,7 +3,7 @@
 
     $censuraP = $paragrafo;
 
-    
+
     $censura = $_GET["censura"];
 
     $langP = strlen($paragrafo);
@@ -18,16 +18,18 @@
     var_dump($censura);
     echo '</pre>';
 
-    $arrayP = explode(' ', $paragrafo);
+    $arrayP = explode(' ', $censuraP);
 
     echo '<pre>';
     var_dump($arrayP);
     echo '</pre>';
 
-    str_replace($censura, '***', $censuraP);
+    str_replace($censura, '***', $arrayP);
 
 
-    
+    echo '<pre>';
+    var_dump($arrayP);
+    echo '</pre>';
 
     $langBadP = strlen($censuraP);
 ?>
