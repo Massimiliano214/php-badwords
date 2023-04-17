@@ -6,7 +6,9 @@
 
     $censura = $_GET["censura"];
 
-    $langP = strlen($paragrafo);
+
+    $lengthP = str_replace(' ', '', $paragrafo);
+    $realLengthP = strlen($lengthP);
 
     
 
@@ -33,7 +35,8 @@
 
     $tryImplode = implode(' ', $censuredText);
 
-    $langBadP = strlen($tryImplode);
+    $tryImplodeLength = str_replace(' ', '', $tryImplode);
+    $langBadP = strlen($tryImplodeLength);
 ?>
 
 <!DOCTYPE html>
@@ -49,7 +52,7 @@
     <main>
 
         <p><?php echo $paragrafo; ?></p>
-        <p><?php echo 'è lungo ' . $langP . ' caratteri'; ?></p>
+        <p><?php echo 'è lungo ' . $realLengthP . ' caratteri'; ?></p>
 
         <p><?php echo $tryImplode; ?></p>
         <p><?php echo 'è lungo ' . $langBadP . ' caratteri'; ?></p>
