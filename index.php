@@ -14,6 +14,9 @@
         <label for="paragrafo">Inserire Paragrafo:</label>
         <input type="text" id="paragrafo" name="paragrafo" placeholder="...">
 
+        <label for="censura">Inserire parola censurata:</label>
+        <input type="text" id="censura" name="censura" placeholder="***">
+
         <button type="submit">Invia</button>
         </form>
     </main>
