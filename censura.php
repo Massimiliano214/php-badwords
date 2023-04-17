@@ -24,14 +24,16 @@
     var_dump($arrayP);
     echo '</pre>';
 
-    str_replace($censura, '***', $arrayP);
+    $censuredText = str_replace($censura, '***', $arrayP);
 
 
     echo '<pre>';
-    var_dump($arrayP);
+    var_dump($censuredText);
     echo '</pre>';
 
-    $langBadP = strlen($censuraP);
+    $tryImplode = implode(' ', $censuredText);
+
+    $langBadP = strlen($tryImplode);
 ?>
 
 <!DOCTYPE html>
@@ -49,7 +51,7 @@
         <p><?php echo $paragrafo; ?></p>
         <p><?php echo 'è lungo ' . $langP . ' caratteri'; ?></p>
 
-        <p><?php echo $censuraP; ?></p>
+        <p><?php echo $tryImplode; ?></p>
         <p><?php echo 'è lungo ' . $langBadP . ' caratteri'; ?></p>
 
     </main>
