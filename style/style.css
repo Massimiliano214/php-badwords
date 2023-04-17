@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    margin: 30px;
+}
+
+main {
+    width: 1000px;
+    margin: auto;
+}

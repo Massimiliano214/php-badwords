@@ -11,7 +11,7 @@
     $realLengthP = strlen($lengthP);
 
     
-
+    /*
     echo '<pre>';
     var_dump($paragrafo);
     echo '</pre>';
@@ -19,19 +19,23 @@
     echo '<pre>';
     var_dump($censura);
     echo '</pre>';
+    */
 
     $arrayP = explode(' ', $censuraP);
 
+    /*
     echo '<pre>';
     var_dump($arrayP);
     echo '</pre>';
+    */
 
     $censuredText = str_replace($censura, '***', $arrayP);
 
-
+    /*
     echo '<pre>';
     var_dump($censuredText);
     echo '</pre>';
+    */
 
     $tryImplode = implode(' ', $censuredText);
 
@@ -46,6 +50,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bad Words</title>
+    <link rel="stylesheet" href="./style/style.css">
     
 </head>
 <body>
